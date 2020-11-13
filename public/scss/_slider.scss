@@ -1,0 +1,171 @@
+/* Main Slider area css
+============================================================================================ */
+.main_slider_area{
+    
+}
+.slider_inner{
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: "";
+        background: rgba(0, 0, 0, .55);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    .camera_fakehover{
+        z-index: auto;
+        .camera_prev{
+            span{
+                &:before{
+                    content: "\f104";
+                    font: normal normal normal 14px/1 FontAwesome;
+                }
+            }
+            @media (min-width: 1500px){
+                left: 236px;
+            }
+        }
+        .camera_next{
+            span{
+                &:before{
+                    content: "\f105";
+                    font: normal normal normal 14px/1 FontAwesome;
+                }
+            }
+            @media (min-width: 1500px){
+                right: 236px;
+            }
+        }
+        .camera_prev, .camera_next{
+            border-radius: 3px;
+            background: #8f9699;
+            @include transition;
+            span{
+                background: transparent;
+                text-align: center;
+                line-height: 40px;
+                color: #fff;
+            }
+            &:hover{
+                background: $baseColor;
+            }
+        }
+        .camera_bar{
+            .camera_bar_cont{
+                background: transparent !important;
+                #pie_0{
+                    top: 0px !important;
+                }
+            }
+        }
+    }
+    .slider_text{
+        position: absolute;
+        top: 260px;
+        color: #fff;
+        h3{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 40px;
+            font-family: $lato;
+            font-weight: 900;
+            letter-spacing: -.25px;
+        }
+        h4{
+            font-size: 28px;
+            font-family: $lato;
+            font-weight: 700;
+            letter-spacing: -.25px;
+        }
+        p{
+            max-width: 570px;
+            font-family: $pop;
+            line-height: 30px;
+            padding: 20px 0px 35px 0px;
+        }
+    }
+    &.main_slider_middle{
+        .slider_text{
+            position: relative;
+            top: 0px;
+            width: 100%;
+            text-align: center;
+            top: 230px;
+            h4{
+                background: $baseColor;
+                display: inline-block;
+                line-height: 54px;
+                height: 56px;
+                padding: 0px 56px;
+                margin-top: 5px;
+            }
+            p{
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/* Testimonials area css
+============================================================================================ */
+
+/* Main Slider area css
+============================================================================================ */
+.testimonials_slider{
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    .testimonials_text{
+        p{
+            line-height: 30px;
+            font-size: 13px;
+            font-family: $pop;
+            color: #6f6f6f;
+            border-bottom: 1px solid #e7e7e7;
+            padding-bottom: 20px;
+        }
+    }
+    .client_name{
+        h4{
+            font-size: 16px;
+            font-family: $lato;
+            font-weight: bold;
+            color: #000;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+        h5{
+            font-size: 14px;
+            color: #acacac;
+            font-family: $lato;
+        }
+    }
+    .owl-prev, .owl-next{
+        position: absolute;
+        height: 36px;
+        width: 36px;
+        background: $baseColor;
+        text-align: center;
+        color: #fff;
+        line-height: 36px;
+        font-weight: bold;
+        border-radius: 3px;
+        cursor: pointer;
+        bottom: 27px;
+        z-index: 2;
+        i{
+            font-weight: bold;
+        }
+    }
+    .owl-prev{
+        right: 67px;
+    }
+    .owl-next{
+        right: 25px;
+    }
+}
+/* End Testimonials area css
+============================================================================================ */

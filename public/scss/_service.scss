@@ -1,0 +1,110 @@
+/* Service area css
+============================================================================================ */
+.service_area{
+    padding-top: 75px;
+    padding-bottom: 10px;
+}
+.service_tab_menu{
+    .nav.nav-tabs{
+        border: none;
+        li{
+            float: none;
+            display: block;
+            margin-bottom: 0px;
+            a{
+                padding: 0px 15px;
+                border-bottom: 1px solid #dfdfdf;
+                display: block;
+                border-left: none;
+                border-top: none;
+                border-right: none;
+                margin-right: 0px;
+                border-radius: 0px;
+                background: #f1f1f1;
+                line-height: 50px;
+                font-size: 14px;
+                color: #2c3e50;
+                font-family: $lato;
+                @include transition;
+                position: relative;
+            }
+            &:hover, &.active{
+                a{
+                    background: $baseColor;
+                    border-bottom: 1px solid $baseColor;
+                    color: #fff;
+                }
+            }
+            &.active{
+                a{
+                    &:before{
+                        content: "\f105";
+                        font: normal normal normal 16px/1 FontAwesome;
+                        position: absolute;
+                        right: 14px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #fff;
+                    }
+                }
+            }
+            &:last-child{
+                a{
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+    }
+}
+.service_tab_content{
+    .latest_news_inner{
+        padding-bottom: 60px;
+        h3{
+            padding: 25px 0px 20px 0px;
+        }
+        p{
+            padding-top: 0px;
+        }
+    }
+}
+.download_area{
+    padding-top: 45px;
+    padding-left: 15px;
+    h5{
+        font-size: 16px;
+        font-family: $lato;
+        font-weight: bold;
+        color: #2c3e50;
+        padding-bottom: 15px;
+    }
+    a{
+        display: block;
+        font-size: 14px;
+        color: #8a8a8a;
+        font-family: $lato;
+        line-height: 30px;
+        i{
+            padding-right: 5px;
+        }
+    }
+}
+.service_area.service_details{
+    padding-bottom: 75px;
+}
+.service_details{
+    p{
+        line-height: 30px;
+        color: #8a8a8a;
+        font-size: 14px;
+        font-family: $lato;
+        padding-bottom: 35px;
+    }
+}
+.service_image{
+    img{
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+}
+/* End Service area css
+============================================================================================ */

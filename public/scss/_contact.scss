@@ -1,0 +1,86 @@
+/* Contact from area css
+============================================================================================ */
+.contact_from_area{
+    padding: 75px 0px 90px 0px;
+    .blog_comment_from{
+        .comm_tittle{
+            padding-top: 0px;
+        }
+    }
+}
+.contact_from_area.contact_from_area2{
+    .blog_comment_from{
+        p{
+            line-height: 30px;
+            font-family: $pop;
+            font-size: 13px;
+            color: #858585;
+            padding-bottom: 35px;
+        }
+    }
+    .contact_details{
+        .map_area{
+            margin-bottom: 60px;
+        }
+    }
+}
+.contact_details{
+    .comm_tittle{
+        padding-bottom: 10px;
+    }
+    .media{
+        margin-top: 20px;
+        .media-left{
+            i{
+                color: $baseColor;
+                font-size: 16px;
+                padding-top: 5px;
+            }
+        }
+        .media-body{
+            p{
+                font-family: $pop;
+                line-height: 24px;
+                font-size: 13px;
+                color: #858585;
+            }
+            h4{
+                font-size: 13px;
+                line-height: 24px;
+                color: #272727;
+                font-family: $pop;
+                span{
+                    color: #858585;
+                }
+            }
+            h3{
+                font-size: 13px;
+                line-height: 24px;
+                color: #858585;
+                font-family: $pop;
+            }
+            ul{
+                padding-top: 20px;
+                li{
+                    display: inline-block;
+                    a{
+                        color: #1b2c3e;
+                        font-size: 12px;
+                        padding-right: 10px;
+                        display: inline-block;
+                        @include transition;
+                        &:hover{
+                            color: $baseColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.map_area{
+    width: 100%;
+    min-height: 460px;
+}
+/* End Contact from area css
+============================================================================================ */

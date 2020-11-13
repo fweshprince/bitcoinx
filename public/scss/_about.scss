@@ -1,0 +1,202 @@
+/* About Company area css
+============================================================================================ */
+.conpany_about_area{
+    padding: 70px 0px;
+    .company_content{
+        .about_tittle{
+            padding: 20px 0px 25px 0px;
+        }
+        p{
+            line-height: 25px;
+            font-size: 13px;
+            font-family: $pop;
+            color: $pfont;
+            padding-bottom: 42px;
+        }
+    }
+    .company_image{
+        img{
+            max-width: 100%;
+        }
+    }
+    .company_about_slider{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .owl-controls{
+            margin-top: 52px;
+            .owl-dots{
+                text-align: center;
+                .owl-dot{
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background: #d3d3d3;
+                    display: inline-block;
+                    margin-right: 10px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    &.active{
+                        background: $baseColor;
+                    }
+                }
+            }
+        }
+    }
+}
+/* About Company area css
+============================================================================================ */
+
+/* Testimonials area css
+============================================================================================ */
+.testimonials_area{
+    background: #f7f7f7;
+    padding: 70px 0px;
+    .testimonials_inner_content{
+        .section_tittle{
+            padding-bottom: 40px;
+        }
+    }
+}
+.chose_inner_area{
+    .section_tittle{
+        padding-bottom: 15px;
+    }
+    .panel-group{
+        .panel-default{
+            box-shadow: none;
+            border: none;
+            .panel-heading{
+                padding: 0px;
+                background: #f7f7f7; 
+                border-radius: 0px;
+                .panel-title{
+                    border-bottom: 1px solid #dedede;
+                    a{
+                        color: #0a0a0a;
+                        font-size: 16px;
+                        font-family: "latosm";
+                        line-height: 54px;
+                        display: block;
+                        span{
+                            float: right;
+                            line-height: 54px;
+                            height: 30px;
+                            width: 25px;
+                            background: $tittle;
+                            text-align: center;
+                            color: #fff;
+                            margin-top: 13px;
+                            margin-right: 15px;
+                            i{
+                                line-height: normal;
+                                font-size: 11px;
+                                position: relative;
+                                top: -13px;
+                                display: inline-block;
+                            }
+                            .fa-plus{
+                                display: none;
+                            }
+                        }
+                        &.collapsed{
+                            span{
+                                .fa-minus{
+                                    display: none;
+                                }
+                                .fa-plus{
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .panel-collapse{
+                .panel-body{
+                    border: none;
+                    background: #f7f7f7;
+                    line-height: 30px;
+                    font-size: 13px;
+                    font-family: $pop;
+                    color: #6f6f6f;
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
+/* Testimonials area css
+============================================================================================ */
+
+/* Global area css
+============================================================================================ */
+.global_area{
+    padding: 60px 0px 50px 0px;
+}
+.global_content{
+    .about_tittle{
+        padding-top: 18px;
+    }
+    p{
+        font-size: 13px;
+        line-height: 30px;
+        color: $pfont;
+        font-family: $pop;
+        padding-top: 30px;
+    }
+}
+.global_image{
+    img{
+        padding-bottom: 30px;
+        max-width: 100%;
+    }
+}
+/* End Global area css
+============================================================================================ */
+
+/* End Global area css
+============================================================================================ */
+.about_team_area{
+    background: #f0f0f0;
+    padding: 75px 0px 80px 0px;
+}
+.about_team_inner{
+    .about_team_img{
+        @include transition;
+        img{
+            width: 100%;
+            @include transition;
+        }
+    }
+    .team_detail{
+        background: #fff;
+        text-align: center;
+        padding: 20px 0px;
+        @include transition;
+        h3{
+            font-size: 16px;
+            font-family: "latosm";
+            color: #000;
+            padding-bottom: 6px;
+        }
+        h4{
+            font-size: 12px;
+            font-family: $pop;
+            color: $baseColor;
+        }
+    }
+    &:hover{
+        .team_detail{
+            background: $baseColor;
+            h3{
+                color: #fff;
+            }
+            h4{
+                color: #fff;
+            }
+        }
+    }
+}
+/* End Global area css
+============================================================================================ */

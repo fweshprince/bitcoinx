@@ -1,0 +1,33 @@
+/* Error area css
+============================================================================================ */
+.error_area{
+    padding: 10px 0px 145px 0px;
+    .error_content{
+        text-align: center;
+        h3{
+            font-family: $lato;
+            font-weight: 900;
+            font-size: 350px;
+            color: $baseColor;
+        }
+        h4{
+            font-size: 24px;
+            color: #000;
+            font-family: $lato;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        p{
+            max-width: 545px;
+            margin:  auto;
+            font-size: 13px;
+            line-height: 26px;
+            color: #898989;
+        }
+        .b_readmore{
+            margin-top: 40px;
+        }
+    }
+}
+/* End Error area css
+============================================================================================ */

@@ -1,0 +1,104 @@
+/* Main Blog area css
+============================================================================================ */
+.right_sidebar_widget{
+    
+}
+.single_widget{
+    padding-bottom: 60px;
+}
+.search_widget{
+    .input-group{
+        .form-control{
+            border: none;
+            background: #eeeeee;
+            outline: none;
+            box-shadow: none;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+            height: 50px;
+            font-size: 14px;
+            color: #797979;
+            font-family: $lato;
+            font-style: italic;
+            @include placeholder{
+                font-size: 14px;
+                color: #797979;
+                font-family: $lato;
+                font-style: italic;
+            }
+        }
+        .input-group-btn{
+            .btn.btn-default{
+                border: none;
+                height: 50px;
+                background: $baseColor;
+                text-shadow: none;
+                color: #fff;
+                border-radius: 3px;
+                padding: 0px;
+                width: 50px;
+                @include transition;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+                &:hover{
+                    background: $basedip;
+                }
+            }
+        }
+    }
+}
+.categori_widget{
+    ul{
+        li{
+            a{
+                display: block;
+                line-height: 50px;
+                font-size: 13px;
+                color: #717171;
+                font-family: $pop;
+                border-bottom: 1px solid #eeeeee;
+                i{
+                    color: $baseColor;
+                    padding-right: 7px;
+                }
+            }
+        }
+    }
+}
+.post_widget{
+    .widget_tittle{
+        padding-bottom: 25px;
+    }
+    .media{
+        border-bottom: 1px solid #eeeeee;
+        padding: 20px 0px;
+        margin-top: 0px;
+        .media-left{
+            i{
+                color: #313c45;
+                font-size: 15px;
+            }
+        }
+        .media-body{
+            h4{
+                font-size: 16px;
+                font-family: "latosm";
+                color: #000;
+                padding-bottom: 5px;
+            }
+            a{
+                font-size: 12px;
+                color: #727272;
+                font-family: "latosm";
+                font-style: italic;
+            }
+        }
+        &:nth-child(1){
+            padding-top: 0px;
+        }
+    }
+}
+/* End Main Blog area css
+============================================================================================ */

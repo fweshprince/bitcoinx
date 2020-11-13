@@ -1,0 +1,47 @@
+/* Portfolio area css
+============================================================================================ */
+.portfolio_area{
+    background: #f7f7f7;
+    padding: 70px 0px;
+    &.project_page{
+        padding: 70px 0px 80px 0px;
+        .portfolio_menu{
+            text-align: left;
+        }
+    }
+}
+.portfolio_menu{
+    text-align: center;
+    padding-bottom: 25px;
+    li{
+        display: inline-block;
+        color: $heading;
+        font-family: $lato;
+        font-size: 16px;
+        margin-right: 32px;
+        @include transition;
+        cursor: pointer;
+        &:last-child{
+            margin-right: 0px;
+        }
+        &:hover, &.active{
+            color: $baseColor;
+        }
+    }
+}
+.portfolio_inner{
+    .portfolio_single{
+        padding-top: 30px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.portfolio_area.portfolio_area2{
+    padding: 80px 0px 120px 0px;
+    .portfolio_menu{
+        text-align: left;
+    }
+}
+/* Portfolio Slider area css
+============================================================================================ */

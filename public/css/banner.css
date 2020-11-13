@@ -1,0 +1,28 @@
+/* Banner area css
+============================================================================================ */
+.banner_area {
+  background: url(../img/banner_bg.jpg) no-repeat scroll center center;
+  background-size: cover;
+  padding: 65px 0px 75px 0px;
+  position: relative;
+}
+.banner_area:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.58);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.banner_area .banner_text {
+  position: relative;
+}
+.banner_area .banner_text h4 {
+  color: #fff;
+  font-size: 24px;
+  font-family: "heavy";
+}
+
+/* End Banner area css
+============================================================================================ */

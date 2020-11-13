@@ -1,0 +1,186 @@
+/* Request Button css
+============================================================================================ */
+.request_btn{
+    background: $baseColor;
+    color: #fff;
+    padding: 0px 22px;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: $lato;
+    font-weight: bold;
+    border-radius: 3px;
+    vertical-align: top;
+    @include transition;
+    &:hover{
+        color: #fff;
+        background: $grayc;
+    }
+}
+/* End Request Button css
+============================================================================================ */
+
+/* Slider Button css
+============================================================================================ */
+.camera_target_content{
+    .cameraContent{
+        .s_readmore_btn{
+            line-height: 50px;
+            background: $baseColor;
+            line-height: 50px;
+            padding: 0px 30px;
+            font-family: $lato;
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-block;
+            color: #fff;
+            border-radius: 3px;
+            @include transition;
+            margin-right: 15px;
+            &:hover{
+                background: #fff;
+                color: #000000; 
+            }
+        }
+        .s_contact_btn{
+            line-height: 50px;
+            background: #fff;
+            line-height: 50px;
+            padding: 0px 30px;
+            font-family: $lato;
+            font-weight: bold;
+            font-size: 15px;
+            display: inline-block;
+            color: #000;
+            border-radius: 3px;
+            @include transition;
+            &:hover{
+                background: $baseColor;
+                color: #fff; 
+            }
+        }
+    }
+}
+.get_btn{
+    line-height: 50px;
+    background: $baseColor;
+    line-height: 50px;
+    padding: 0px 30px;
+    font-family: $lato;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    @include transition;
+    margin-right: 15px;
+    &:hover{
+        background: #353535;
+        color: #fff; 
+    }
+}
+.project_btn{
+    line-height: 50px;
+    background: #353535;
+    line-height: 50px;
+    padding: 0px 30px;
+    font-family: $lato;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    @include transition;
+    &:hover{
+        background: $baseColor;
+        color: #fff; 
+    }
+}
+.read_more_btn{
+    background: $baseColor;
+    max-width: 145px;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    font-family: $lato;
+    font-size: 13px;
+    display: block;
+    padding-left: 13px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    @include transition;
+    i{
+        float: right;
+        line-height: 40px;
+        padding: 0px 15px;
+    }
+    &:before{
+        content: "";
+        background: $basedip;
+        position: absolute;
+        right: 0px;
+        width: 35px;
+        height: 100%;
+        z-index: -1;
+        @include transition;
+        border-radius: 3px;
+    }
+    &:hover{
+        color: #fff;
+        &:before{
+            width: 100%;
+        }
+    }
+}
+.view_details_btn{
+    font-size: 16px;
+    font-family: $lato;
+    font-weight: bold;
+    color: $baseColor;
+    @include transition;
+    &:hover{
+        color: $tittle;
+    }
+}
+.b_readmore{
+    display: inline-block;
+    background: $baseColor;
+    color: #fff;
+    padding: 0px 30px;
+    height: 50px;
+    border-radius: 3px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    @include transition;
+    &:hover{
+        background: $basedip;
+        color: #fff;
+    }
+}
+.comment_submit{
+    border: none;
+    display: inline-block;
+    background: $baseColor;
+    color: #fff;
+    padding: 0px 30px;
+    height: 50px;
+    border-radius: 3px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    @include transition;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    &:hover{
+        background: $basedip;
+        color: #fff;
+    }
+}
+/* End Slider Button css
+============================================================================================ */

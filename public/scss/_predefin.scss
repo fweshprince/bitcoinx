@@ -1,0 +1,193 @@
+/* Extra css
+============================================================================================ */
+body, h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+    padding: 0px;
+    line-height: normal;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.row.m0{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+}
+audio, canvas, img, svg, video{
+    max-width: none;
+}
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $baseColor;
+    z-index: 99999999;
+    background: #eee;
+}
+#preloader_1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#preloader_1 span{
+    display:block;
+    bottom:0px;
+    width: 6px;
+    height: 5px;
+    background:#252c35; 
+    position:absolute;
+    animation: preloader_1 1.5s  infinite ease-in-out;
+}
+ 
+#preloader_1 span:nth-child(2){
+left:11px;
+animation-delay: .2s;
+ 
+}
+#preloader_1 span:nth-child(3){
+left:22px;
+animation-delay: .4s;
+}
+#preloader_1 span:nth-child(4){
+left:33px;
+animation-delay: .6s;
+}
+#preloader_1 span:nth-child(5){
+left:44px;
+animation-delay: .8s;
+}
+@keyframes preloader_1 {
+    0% {height:5px;transform:translateY(0px);background:#252c35;}
+    25% {height:30px;transform:translateY(15px);background:#1c954e;}
+    50% {height:5px;transform:translateY(0px);background:#252c35;}
+    100% {height:5px;transform:translateY(0px);background:#252c35;}
+}
+
+/* End Extra css
+============================================================================================ */
+
+/* About tittle css
+============================================================================================ */
+.about_tittle{
+    h2{
+        font-size: 22px;
+        font-family: "heavy";
+        color: $tittle;
+    }
+}
+/* End About tittle css
+============================================================================================ */
+
+/* End Section tittle css
+============================================================================================ */
+.section_tittle{
+    h2{
+        font-size: 26px;
+        font-family: $lato;
+        font-weight: 900;
+        color: #262f36;
+    }
+    p{
+        line-height: 30px;
+        font-size: 13px;
+        color: $pfont;
+        font-family: $pop;
+        font-weight: 400;
+        padding-top: 15px;
+    }
+}
+.news_tittle{
+    text-align: center;
+    h2{
+        font-size: 26px;
+        font-family: $lato;
+        font-weight: 900;
+        color: #262f36;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: 13px;
+        line-height: 30px;
+        font-family: $pop;
+        color: $pfont;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+/* End Section tittle css
+============================================================================================ */
+
+/* Footer widget tittle css
+============================================================================================ */
+.f_widget_tittle{
+    padding-bottom: 25px;
+    h3{
+        color: #fff;
+        font-family: $lato;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+/* End Footer widget tittle css
+============================================================================================ */
+
+/* Partner area css
+============================================================================================ */
+.partner_area{
+    background: #f7f7f7;
+    padding: 75px 0px 95px 0px;
+    .news_tittle{
+        padding-bottom: 50px;
+    }
+    .partner_img{
+        img{
+            max-width: 100%;
+        }
+    }
+    &.partner_area2{
+        background: #fff;
+        padding: 50px 0px;
+        .partner_img{
+            border: 1px solid #eae9e6
+        }
+    }
+}
+.info_tittle{
+    h4{
+        font-size: 20px;
+        color: #000;
+        font-family: $lato;
+        font-weight: bold;
+    }
+}
+.widget_tittle{
+    padding-bottom: 35px;
+    h3{
+        font-size: 20px;
+        font-family: $lato;
+        font-weight: bold;
+        color: #000;
+    }
+}
+.comm_tittle{
+    h4{
+        font-family: $lato;
+        font-weight: bold;
+        color: #1b2c3e;
+        font-size: 20px;
+    }
+}
+/* End Partner area css
+============================================================================================ */

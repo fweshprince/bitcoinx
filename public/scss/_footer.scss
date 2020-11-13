@@ -1,0 +1,181 @@
+/* Footer area css
+============================================================================================ */
+.footer_area{
+    
+}
+.footer_widget_area{
+    background: $grayc;
+    padding-top: 60px;
+    padding-bottom: 35px;
+    .footer_widget_inner{
+    }
+}
+.f_about_widget{
+    p{
+        line-height: 30px;
+        font-size: 14px;
+        font-family: $lato;
+        color: #979da4;
+    }
+    img{
+        padding-top: 35px;
+    }
+}
+.f_news_widget{
+    p{
+        line-height: 30px;
+        font-size: 14px;
+        font-family: $lato;
+        color: #979da4;
+    }
+    .input-group{
+        padding-top: 27px;
+        .form-control{
+            height: 45px;
+            background: #2f3740;
+            border: none;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+            font-family: $lato;
+            font-size: 13px;
+            font-style: italic;
+            color: #556676;
+            outline: none;
+            box-shadow: none;
+            @include placeholder{
+                font-family: $lato;
+                font-size: 13px;
+                font-style: italic;
+                color: #556676;
+            }
+        }
+        .input-group-btn{
+            .btn.btn-default{
+                background: #3a4b5b;
+                border: none;
+                height: 45px;
+                box-shadow: none;
+                width: 52px;
+                text-shadow: none;
+                border-radius: 3px;
+                outline: none;
+                box-shadow: none;
+                i{
+                    color: #fff;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+.f_navigation_widget{
+    ul{
+        li{
+            width: 50%;
+            float: left;
+            overflow: hidden;
+            a{
+                line-height: 30px;
+                font-size: 14px;
+                color: #979da4;
+                font-family: $lato;
+                @include transition;
+                i{
+                    padding-right: 10px;
+                }
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+}
+.f_contact_widget{
+    p{
+        line-height: 30px;
+        font-size: 14px;
+        font-family: $lato;
+        color: #979da4;
+    }
+    .contact_lsit{
+        padding-left: 15px;
+        padding-top: 10px;
+        li{
+            a{
+                color: #979da4;
+                font-size: 14px;
+                font-family: $lato;
+                line-height: 30px;
+                @include transition;
+                i{
+                    color: $baseColor;
+                    position: relative;
+                    left: -15px;
+                }
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+    .f_widget_social{
+        padding-top: 25px;
+        li{
+            display: inline-block;
+            a{
+                height: 30px;
+                width: 30px;
+                background: #3a4b5b;
+                font-size: 11px;
+                display: inline-block;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                border-radius: 3px;
+                margin-right: 7px;
+                @include transition;
+            }
+            &:last-child{
+                a{
+                    margin-right: 0px;
+                }
+            }
+            &:hover{
+                a{
+                    background: $baseColor;
+                }
+            }
+        }
+    }
+}
+.footer_copyright_area{
+    background: #1e232a;
+    .copyright_left{
+        h4{
+            line-height: 82px;
+            font-family: $lato;
+            color: #979da4;
+            font-size: 14px;
+            a{
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+    .copyright_right{
+        h5{
+            line-height: 82px;
+            font-family: $lato;
+            color: #979da4;
+            font-size: 14px;
+            a{
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
+/* End Footer area css
+============================================================================================ */

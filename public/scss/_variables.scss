@@ -1,0 +1,43 @@
+/*font Variables*/
+$lato: 'Lato', sans-serif;
+$pop: 'Poppins', sans-serif;
+$ral: 'Raleway', sans-serif;
+
+/*Color Variables*/
+
+$baseColor: #26a65b;
+$basedip: #1c954e;
+$grayc: #252c35;
+$tittle: #313c45;
+$heading: #322a2a;
+$pfont: #848484;
+
+
+// font
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Poppins:300,400,500,600,700';
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+// Font family link
+@font-face {
+    font-family: "heavy";
+    src: url(../fonts/theme-font/lato-heavy.woff);
+}
+@font-face {
+    font-family: "latosm";
+    src: url(../fonts/theme-font/Lato-Semibold.woff);
+}
+
+

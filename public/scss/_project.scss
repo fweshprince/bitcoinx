@@ -1,0 +1,189 @@
+/* Main Slider area css
+============================================================================================ */
+.project_quote{
+    overflow: hidden;
+    clear: both;
+    background: #f7f7f7;
+    .left_content{
+        h4{
+            font-size: 22px;
+            color: #434343;
+            font-family: $lato;
+            font-weight: bold;
+            line-height: 100px;
+        }
+    }
+    .right_content{
+        padding-top: 25px;
+    }
+}
+/* Main Slider area css
+============================================================================================ */
+
+/* Main Slider area css
+============================================================================================ */
+.project_item_area{
+    padding: 45px 0px;
+    
+}
+.project_item_inner{
+    @include transition;
+    box-shadow: 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    img{
+        @include transition;
+    }
+    .project_item_content{
+        padding: 0px 15px 22px 15px;
+        h3{
+            font-size: 20px;
+            font-family: "heavy";
+            color: $tittle;
+            padding: 20px 0px 15px 0px;
+        }
+        p{
+            font-size: 13px;
+            line-height: 30px;
+            font-family: $pop;
+            color: $pfont;
+            padding-bottom: 30px;
+        }
+    }
+}
+.project_item_area.project_item2{
+    padding: 60px 0px 80px 0px;
+    clear: both;
+    .project_item_inner{
+        box-shadow: none;
+        .project_item_content{
+            padding: 0px;
+        }
+    }
+}
+/* Main Slider area css
+============================================================================================ */
+
+/* Project info area css
+============================================================================================ */
+.project_info_area{
+    padding: 75px 0px 80px 0px;
+    .project_info_slider{
+        .project_info_inner{
+            border: none;
+            margin-bottom: 30px;
+            .custom-navigation{
+                .flex-prev, .flex-next{
+                    position: absolute;
+                    top: 50%;
+                    z-index: 2;
+                    height: 43px;
+                    width: 43px;
+                    border-radius: 3px;
+                    background: #a8a4a0;
+                    text-align: center;
+                    line-height: 42px;
+                    font-size: 20px;
+                    color: #fff;
+                    transition: all 200ms ease-out;
+                    transform: translateY(-50%);
+                    outline: none;
+                    box-shadow: none;
+                    &:hover{
+                        background: $baseColor;
+                    }
+                }
+                .flex-prev{
+                    left: 20px;
+                }
+                .flex-next{
+                    right: 20px;
+                }
+            }
+        }
+        .project_carousel_inner{
+            border: none;
+            overflow: hidden;
+            margin-bottom: 0px;
+            .custom-navigation-carousel{
+                .flex-prev, .flex-next{
+                    position: absolute;
+                    top: 50%;
+                    z-index: 2;
+                    height: 43px;
+                    width: 43px;
+                    border-radius: 3px;
+                    background: #a8a4a0;
+                    text-align: center;
+                    line-height: 42px;
+                    font-size: 20px;
+                    color: #fff;
+                    transition: all 200ms ease-out;
+                    transform: translateY(-50%);
+                    outline: none;
+                    box-shadow: none;
+                    &:hover{
+                        background: $baseColor;
+                    }
+                }
+                .flex-prev{
+                    left: -50px;
+                }
+                .flex-next{
+                    right: -50px;
+                }
+            }
+            &:hover{
+                .custom-navigation-carousel{
+                    .flex-prev{
+                        left: 0px;
+                    }
+                    .flex-next{
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .project_info_content{
+        .info_tittle{
+            padding-bottom: 10px;
+        }
+        ul{
+            li{
+                font-size: 14px;
+                color: #393939;
+                font-family: $lato;
+                line-height: 24px;
+                border-bottom: 1px solid #eeeeee;
+                padding: 10px 0px;
+                span{
+                    color: #acacac;
+                }
+            }
+        }
+    }
+    .project_details{
+        padding-top: 50px;
+        .info_tittle{
+            padding-bottom: 20px;
+        }
+        p{
+            line-height: 30px;
+            font-size: 14px;
+            font-family: $lato;
+            color: #acacac;
+        }
+    }
+    .more_project_details{
+        padding-top: 60px;
+        p{
+            line-height: 30px;
+            font-size: 14px;
+            font-family: $lato;
+            color: #acacac;
+            padding-top: 35px;
+        }
+    }
+}
+/* End Project info area css
+============================================================================================ */
