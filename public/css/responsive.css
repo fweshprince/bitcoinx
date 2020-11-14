@@ -176,6 +176,10 @@
     .logo_area .pull-right.contact_details_area {
         display: none;
     }
+    .logo_neno img {
+        width: 150%;
+        display: block;
+    }
     .logo_area .pull-left.logo_neno {
         padding-bottom: 0px;
     }
