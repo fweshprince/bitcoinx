@@ -45,6 +45,7 @@
             padding: 18px;
             width: 100%;
             border: none;
+            border-top: 3px solid white;
             text-align: left;
             outline: none;
             font-size: 15px;
@@ -65,154 +66,41 @@
     </head>
     <body>
        
-       <div id="preloader">
-           <div id="preloader_1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-       
-        <!--==========Header Top area==========-->
-        <div class="header_top">
-            <div class="container">
-                <div class="pull-left company_content">
-                    <h4>Neon Press & Architecture Company</h4>
-                </div>
-                <div class="pull-right header_language">
-                    <div class="selector">
-                        <select name="countries" id="countries" style="width:300px;">
-                          <option value='yt' data-image="img/aus-flag.jpg" data-imagecss="flag yt" data-title="English">English</option>
-                          <option value='yu' data-image="img/bd-flag.jpg" data-imagecss="flag yu" data-title="Bangladesh">Bangladesh</option>
-                          <option value='yt' data-image="img/aus-flag.jpg" data-imagecss="flag yt" data-title="English">English</option>
-                          <option value='yu' data-image="img/bd-flag.jpg" data-imagecss="flag yu" data-title="Bangladesh">Bangladesh</option>
-                        </select>
-                    </div>
-                    <ul class="header_social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--==========End Header Top area==========-->
-        
-        <!--==========Logo area==========-->
-        <div class="logo_area">
-            <div class="container">
-                <div class="pull-left logo_neno">
-                    <img src="img/logo-neno.png" alt="">
-                </div>
-                <div class="pull-right contact_details_area">
-                    <div class="contact_item">
-                        <div class="media">
-                            <div class="media-left">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4>PHONE</h4>
-                                <h5>(0464) 0123 45 67</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact_item">
-                        <div class="media">
-                            <div class="media-left">
-                                <i class="fa fa-envelope-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4>EMAIL</h4>
-                                <h5>info@pithreepress.com</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact_item">
-                        <div class="media">
-                            <div class="media-left">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4>OPENING TIME</h4>
-                                <h5>Mon - Sat 8:00 - 19:00 </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="request_btn" href="#">Price Request </a>
-                </div>
-            </div>
-        </div>
-        <!--==========End Logo area==========-->
+      <%- include("./partials/nav.ejs") %> 
         
         <!--==========Menu area==========-->
         <div class="main_menu_area">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="index-2.html">Home - 02</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">ABOUT COMPANY</a></li>
-                            <li class="dropdown submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OUR SERVICES</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="service-details.html">Service Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="project.html">Projects</a></li>
-                                    <li><a href="project-single.html">Project Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BLOGS</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="single-blog.html">Single Blog</a></li>
-                                </ul>
-                            </li>
-                            <li class="active"><a href="404.html">Error</a></li>
-                            <li class="dropdown submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="contact-2.html">Contact - 02</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="search_menu">
-                            <li class="dropdown search_bar">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><input type="text" placeholder="Search for..."></li> 
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
+          <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="index">HOME</a></li>
+                        <li ><a href="about-us">ABOUT COMPANY</a></li>
+                        <li class="dropdown submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">accounts</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="sign-up">register</a></li>
+                                <li><a href="login">login</a></li>
+                            </ul>
+                        </li>
+                        <li ><a href="affiliate">affiliate</a></li>
+                        <li ><a href="terms-and-conditions">terms and conditions</a></li>
+                        <li ><a href="payouts">paid</a></li>
+                        <li class="active"><a href="faq">faq</a></li>
+                        <li ><a href="contact">contact</a></li>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
         </div>
         <!--==========End Menu area==========-->
         
@@ -220,10 +108,10 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_text">
-                    <h4>Contact Us</h4>
+                    <h4>Frequently asked questions</h4>
                     <a href="index.html">Home</a>
                     <span>/</span>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">About</a>
                 </div>
             </div>
         </section>
@@ -232,109 +120,84 @@
         <!--==========Error area==========-->
         <section class="error_area">
             <div class="container">
-              <p>Collapsible Set:</p>
-              <button type="button" class="collapsible">Open Section 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</button>
+              <h1>FAQ</h1>
+              <h4 style="margin: 40px;">The answers to the most important questions on the project are
+                collected in this section. To make it easier for you to find
+                what you are looking for, we arranged them in the appropriate
+                categories. Click on a category to expand it</h4>
+              <button type="button" class="collapsible"><h4>Questions regarding registration</h4></button>
               <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  1. How to register in the project? 
+                </p>
+                <p>In order to register in
+                  this project, you need to click on the "Registration"
+                  button at the top of the page and fill in the required
+                  fields of the questionnaire.
+                  After registration, be sure to upload a picture of a valid government approved identification
+                  document, as new KYC regulations require financial instituitions to verify customers identity</p>
+                <br>
+                <p>
+                  2. Who is allowed to register and participate in this
+                  investment project? 
+                </p>
+                <p>Any adult citizen. The country of
+                  residence does not matter.</p>
+                <br>
+                <p>
+                  3. Is the investor obligated to provide reliable
+                  information about himself? 
+                </p>
+                <p>Yes. KYC regulations dictate that companies handling financial
+                  transactions verify customer identity</p>
               </div>
-              <button type="button" class="collapsible">Open Section 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</button>
+              <button type="button" class="collapsible"><h4>Questions regarding finance</h4></button>
               <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  1. How quickly after registration does the investor need
+                  to make a deposit?
+                </p>
+                <p> At any convenient time. After
+                  registration, you can carefully study the conditions of
+                  the service plans and only after that make the deposit.</p>
+                  <br>
+                <p>
+                  2. When do accrual to my deposit start? 
+                </p>
+                <p>All accruals are
+                  carried out once a day. You can follow them in your
+                  personal portfolio.</p>
+                  <br>
+                <p>
+                  3. Is there a fee for withdrawing profits? 
+                </p>
+                <p>Yes, our traders are paid 10% of total trading profits.
+                  Due to previous unfortunate experience with dishonest investors, we now require all commissions to
+                  be paid upfront before withdrawal is approved
+                  The minimum withdrawal amount is 0.0005 BTC.</p>
               </div>
-              <button type="button" class="collapsible">Open Section 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</button>
+              <button type="button" class="collapsible"><h4>How does it really work?</h4></button>
               <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  It is really simple! Here at Capital Returns we realize that a lot of people can not afford to
+                  invest the years it would take to master forex trading. We have developed an excellent
+                  trade-by-proxy system whereupon registration on our platform, your account is automatically linked
+                  to that of a professional trader and every trade carried out by the trader automatically accrues
+                  profit on the investors portfolio relative to your investment plan and profit percentage, WITH ZERO
+                  TRADING EXPERIENCE OR EFFORT BY THE INVESTOR!!. All our traders have at least a decade of experience
+                  under their belts. The profit percentages quoted on each plan is the LEAST GURANTEED MINIMUM
+                  percentage returns promised. Profit returns in actuality are often higher (up to 1000%), as
+                  cryptocurrency values rises and forex rate and profitability varies. Investment plans are purchased
+                  after funding account. Register an account and navigate to the deposits page to make a deposit. We
+                  accept bitcoin deposits in order to facilitate global participation
+                </p>
               </div>
             </div>
         </section>
         <!--==========End Error area==========-->
         
         <!--==========Footer area==========-->
-        <footer class="footer_area">
-            <div class="footer_widget_area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="footer_widget_inner">
-                                <div class="f_widget_tittle">
-                                    <h3>ABOUT US</h3>
-                                </div>
-                                <div class="f_about_widget">
-                                    <p>Vivamus nisi purus, luctus sit amet scelerisque volutpat, malesuada in quam. Morbi vehicula, ligula et consectetur dictum, lectus elit ultricies est, ut congue augue risus ac turpis.</p>
-                                    <img src="img/footer-logo-neno.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer_widget_inner">
-                                <div class="f_widget_tittle">
-                                    <h3>E-NEWSLETTER</h3>
-                                </div>
-                                <div class="f_news_widget">
-                                    <p>Subscribe to our newsletter, we will send you about newest projects</p>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search for...">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button"><i class="fa fa-envelope" aria-hidden="true"></i></button>
-                                        </span>
-                                    </div><!-- /input-group -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer_widget_inner">
-                                <div class="f_widget_tittle">
-                                    <h3>NAVIGATION </h3>
-                                </div>
-                                <div class="f_navigation_widget">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>About Company</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Features</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Our Services</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Projects</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="footer_widget_inner">
-                                <div class="f_widget_tittle">
-                                    <h3>CONTACT US</h3>
-                                </div>
-                                <div class="f_contact_widget">
-                                   <p>Lorem ipsum dolor sit amet, tollit adolescens duo ea, ne porro complectitur.</p>
-                                    <ul class="contact_lsit">
-                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Santa Monica Boulevard Los Angeles</a></li>
-                                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>(0464) 0123 45 67</a></li>
-                                        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@pitreepress.com</a></li>
-                                    </ul>
-                                    <ul class="f_widget_social">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_copyright_area">
-                <div class="container">
-                    <div class="pull-left copyright_left">
-                        <h4>Pithree Press Template by <a href="https://themeforest.net/user/wethemez/portfolio">Tavilla Themes.</a></h4>
-                    </div>
-                    <div class="pull-right copyright_right">
-                        <h5>© 2009 - 2016 <a href="https://themeforest.net/user/wethemez/portfolio">Neon Press</a>. All rights reserved.</h5>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <%- include("./partials/footer.ejs") %>
         <!--==========End Footer area==========-->
         
         

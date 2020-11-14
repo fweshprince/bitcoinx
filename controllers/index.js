@@ -69,6 +69,11 @@ exports.contact = (req, res, next) => {
 exports.faq = (req, res, next) => {
   res.render("faq");
 };
+// @desc Render paid page
+// @access public
+exports.paid = (req, res, next) => {
+  res.render("paid");
+};
 // @desc Render home page
 // @access public
 exports.index = (req, res, next) => {

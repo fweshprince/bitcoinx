@@ -6,6 +6,7 @@ const {
   contact,
   dashboard,
   faq,
+  paid,
   index,
   invest,
   signin,
@@ -61,6 +62,7 @@ router.route("/dashboard").get(dashboard);
 router.route("/faq").get(faq);
 router.route("/invest").get(invest);
 router.route("/login").get(signin);
+router.route("/payouts").get(paid);
 router.route("/terms-and-conditions").get(rules);
 router.route("/sign-up").get(signup);
 router.route("/withdraw").get(withdraw);
