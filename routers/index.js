@@ -70,8 +70,8 @@ router.route("/invest").post(userinvest);
 router.route("/withdraw").post(userwithdraw);
 router.route("/contact").post(submitContact);
 router.route("/rollover").post(rollover);
-router.route("/signup").post(postsignin);
-router.route("/login").post(postsignup);
+router.route("/signup").post(postsignup);
+router.route("/login").post(postsignin);
 router.route("/logout").get(postlogout);
 router.post("/deposit", upload.single("image"), async (req, res, next) => {
   const result = await cloudinary.uploader.upload(req.file.path);

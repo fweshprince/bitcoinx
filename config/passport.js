@@ -1,17 +1,24 @@
 const LocalStrategy = require("passport-local").Strategy;
+const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 
 module.exports = function (passport) {
   passport.use(
     new LocalStrategy(
-      { usernameField: "accountNumber", passwordField: "pin" },
+      { usernameField: "email", passwordField: "password" },
       async function (username, password, done) {
-        const user = await User.findOne({ accountNumber: username });
+        const user = await User.findOne({ email: username }).select(
+          "+password"
+        );
         if (!user) {
           return done(null, false);
         }
         try {
-          if (password == user.pin) {
+          if (password == user.password) {
+            return done(null, user);
+          }
+          const validLogin = await bcrypt.compare(password, user.password);
+          if (validLogin) {
             return done(null, user);
           } else {
             return done(null, false);
