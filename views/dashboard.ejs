@@ -97,7 +97,7 @@
           <div class="col-xl-9 col-lg-9 col-12 animated bounceInLeft">
             <div>
               <p style="color: white">Telegram</p>
-              <p><strong>Email: support@bitcoinx-trader.com</strong></p>
+              <p style="color: #E4912C;"><strong>Email: support@bitcoinx-trader.com</strong></p>
               <p style="color: white">Phone</p>
             </div>
           </div>
@@ -125,7 +125,7 @@
       <div class="container margin-bottom-list">
         <div class="row animatedParent">
           <div class="col-xl-9 col-lg-9 col-12 animated bounceInLeft">
-            <p><strong>Referral link:
+            <p style="color: #E4912C;"><strong>Referral link:
                 <%= `https://bitcoinx-trader.herokuapp.com/sign-up?referrer=${user.username}` %></strong></p>
           </div>
         </div>
@@ -156,135 +156,145 @@
       </div>
       <% } %>
       <% if(user.rollover != false) { %>
-      <div class="container-fluid animatedParent" style="
-        background-color: #125a30;
-        border-radius: 10px;
-        width: 90%;
-        padding: 10px;
-      ">
-        <div class="row reasons-block">
-          <div class="col-xl-4 col-lg-4 col-12 animated bounceInLeft delay-250">
-            <h2 class="h2-main" style="color: cornsilk">
-              Welcome <%= `${user.firstName}` %>
-            </h2>
-          </div>
-          <div class="col-xl-8 col-lg-8 col-12">
-            <div class="row">
-              <div class="col-sm-6 animated bounceInRight delay-250">
-                <a href="activeplans">
-                  <div class="reason-block-cont" style="
-                    background-color: #0c0b20;
-                    padding: 10px;
-                    margin: 0;
-                    margin-bottom: 10px;
-                  ">
-                    <div class="reasons-icon-div">
-                      <img src="assets/img/reason-icon1.svg" alt="images" />
-                    </div>
-                    <div class="reasons-desc-div">
-                      <h4 style="color: cornsilk">My portfolio</h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 animated bounceInRight delay-250">
-                <a href="deposit">
-                  <div class="reason-block-cont" style="
-                    background-color: #0c0b20;
-                    padding: 10px;
-                    margin: 0;
-                    margin-bottom: 10px;
-                  ">
-                    <div class="reasons-icon-div">
-                      <img src="assets/img/reason-icon2.svg" alt="images" />
-                    </div>
-                    <div class="reasons-desc-div">
-                      <h4 style="color: cornsilk">Make a deposit</h4>
-                      <!-- <p style="color: cornsilk;">Lorem ipsum dolor sit amet,  consectetur adipiscing elit.</p> -->
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 animated bounceInRight delay-500">
-                <a href="invest">
-                  <div class="reason-block-cont" style="
-                    background-color: #0c0b20;
-                    padding: 10px;
-                    margin: 0;
-                    margin-bottom: 10px;
-                  ">
-                    <div class="reasons-icon-div">
-                      <img src="assets/img/reason-icon3.svg" alt="images" />
-                    </div>
-                    <div class="reasons-desc-div">
-                      <h4 style="color: cornsilk">Choose a plan</h4>
-                      <!-- <p style="color: cornsilk;">Lorem ipsum dolor sit amet,  consectetur adipiscing elit.</p> -->
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 animated bounceInRight delay-500">
-                <a href="withdraw">
-                  <div class="reason-block-cont" style="
-                    background-color: #0c0b20;
-                    padding: 10px;
-                    margin: 0;
-                    margin-bottom: 10px;
-                  ">
-                    <div class="reasons-icon-div">
-                      <img src="assets/img/reason-icon4.svg" alt="images" />
-                    </div>
-                    <div class="reasons-desc-div">
-                      <h4 style="color: cornsilk">Withdraw funds</h4>
-                      <!-- <p style="color: cornsilk;">Lorem ipsum dolor sit amet,  consectetur adipiscing elit.</p> -->
-                    </div>
-                  </div>
-                </a>
+        <div class="container margin-bottom-list">
+          <div class="row animatedParent">
+            <div class="col-xl-9 col-lg-9 col-12 animated bounceInLeft">
+              <div>
+                <p style="color: white">Telegram</p>
+ 
               </div>
             </div>
           </div>
         </div>
-      </div>
-  
-      <div class="container animatedParent">
-        <div class="row" style="width: 100%; margin: auto;">
-          <div class="col-xl-2 col-lg-3 col-md-3" style="
-        background-color: #cccccc;
-        border-radius: 15px;
-        padding: 0;
-        border: 10px solid #125a30;
-        margin-top: 10px;
-        margin-bottom: 1vh;
-        min-height: 10vh;"><h4>Deposited: <%= `$${user.deposits}` %></h4></div>
-   
-        <div class="col-xl-2 col-lg-3 col-md-3" style="
-        background-color: #cccccc;
-        border-radius: 15px;
-        padding: 0;
-        border: 10px solid #125a30;
-        margin-top: 10px;
-        margin-bottom: 1vh;
-        min-height: 10vh;"><h4>Profit: <%= `$${user.profit}` %></h4></div>
-
-        <div class="col-xl-2 col-lg-3 col-md-3" style="
-        background-color: #cccccc;
-        border-radius: 15px;
-        padding: 0;
-        border: 10px solid #125a30;
-        margin-top: 10px;
-        margin-bottom: 1vh;
-        min-height: 10vh;"><h4>Ref Bonus: <%= `$${user.refBonus}` %></h4></div>
-
-        <div class="col-xl-2 col-lg-3 col-md-3" style="
-        background-color: #cccccc;
-        border-radius: 15px;
-        padding: 0;
-        border: 10px solid #125a30;
-        margin-top: 10px;
-        margin-bottom: 5vh;
-        min-height: 10vh;"><h4>Balance: <%= `$${user.balance}` %></h4></div>
-        </div>
-      </div>
+        <div class="container-fluid animatedParent" style="
+            background-color: rgba(128, 216, 89, 0.8);
+            border-radius: 10px;
+            width: 90%;
+            padding: 10px;
+          ">
+            <div class="row reasons-block">
+              <div class="col-xl-4 col-lg-4 col-12 animated bounceInLeft delay-250">
+                <h2 class="h2-main" style="color: #333333">
+                  Welcome <%= `${user.firstName}` %>
+                </h2>
+              </div>
+              <div class="col-xl-8 col-lg-8 col-12">
+                <div class="row">
+                  <div class="col-sm-6 animated bounceInRight delay-250">
+                    <a href="activeplans">
+                      <div class="reason-block-cont" style="
+                        background-color: rgba(51, 51, 51, 0.9);
+                        padding: 10px;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      ">
+                        <div class="reasons-icon-div">
+                          <img src="assets/img/reason-icon1.svg" alt="images" />
+                        </div>
+                        <div class="reasons-desc-div">
+                          <h4 style="color: cornsilk">My portfolio</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 animated bounceInRight delay-250">
+                    <a href="deposit">
+                      <div class="reason-block-cont" style="
+                        background-color: rgba(51, 51, 51, 0.9);
+                        padding: 10px;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      ">
+                        <div class="reasons-icon-div">
+                          <img src="assets/img/reason-icon2.svg" alt="images" />
+                        </div>
+                        <div class="reasons-desc-div">
+                          <h4 style="color: cornsilk">Make a deposit</h4>
+                          <!-- <p style="color: cornsilk;">Lorem ipsum dolor sit amet,  consectetur adipiscing elit.</p> -->
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 animated bounceInRight delay-500">
+                    <a href="invest">
+                      <div class="reason-block-cont" style="
+                        background-color: rgba(51, 51, 51, 0.9);
+                        padding: 10px;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      ">
+                        <div class="reasons-icon-div">
+                          <img src="assets/img/reason-icon3.svg" alt="images" />
+                        </div>
+                        <div class="reasons-desc-div">
+                          <h4 style="color: cornsilk">Choose a plan</h4>
+                          <!-- <p style="color: cornsilk;">Lorem ipsum dolor sit amet,  consectetur adipiscing elit.</p> -->
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-sm-6 animated bounceInRight delay-500">
+                    <a href="withdraw">
+                      <div class="reason-block-cont" style="
+                        background-color: rgba(51, 51, 51, 0.9);
+                        padding: 10px;
+                        margin: 0;
+                        margin-bottom: 10px;
+                      ">
+                        <div class="reasons-icon-div">
+                          <img src="assets/img/reason-icon4.svg" alt="images" />
+                        </div>
+                        <div class="reasons-desc-div">
+                          <h4 style="color: cornsilk">Withdraw funds</h4>
+                          <!-- <p style="color: cornsilk;">Lorem ipsum dolor sit amet,  consectetur adipiscing elit.</p> -->
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container animatedParent">
+            <div class="row" style="width: 100%; margin: auto;">
+              <div class="col-xl-2 col-lg-3 col-md-3" style="
+            background-color: #cccccc;
+            border-radius: 15px;
+            padding: 0;
+            border: 10px solid #333333;
+            margin-top: 10px;
+            margin-bottom: 1vh;
+            min-height: 10vh;"><h4>Deposited: <%= `$${user.deposits}` %></h4></div>
+       
+            <div class="col-xl-2 col-lg-3 col-md-3" style="
+            background-color: #cccccc;
+            border-radius: 15px;
+            padding: 0;
+            border: 10px solid #333333;
+            margin-top: 10px;
+            margin-bottom: 1vh;
+            min-height: 10vh;"><h4>Profit: <%= `$${user.profit}` %></h4></div>
+    
+            <div class="col-xl-2 col-lg-3 col-md-3" style="
+            background-color: #cccccc;
+            border-radius: 15px;
+            padding: 0;
+            border: 10px solid #333333;
+            margin-top: 10px;
+            margin-bottom: 1vh;
+            min-height: 10vh;"><h4>Ref Bonus: <%= `$${user.refBonus}` %></h4></div>
+    
+            <div class="col-xl-2 col-lg-3 col-md-3" style="
+            background-color: #cccccc;
+            border-radius: 15px;
+            padding: 0;
+            border: 10px solid #333333;
+            margin-top: 10px;
+            margin-bottom: 5vh;
+            min-height: 10vh;"><h4>Balance: <%= `$${user.balance}` %></h4></div>
+            </div>
+          </div>
       <% } %>
 
 
