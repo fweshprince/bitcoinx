@@ -9,19 +9,19 @@ const UserSchema = new Schema(
       type: String,
       required: [true, "First name is required"],
       trim: true,
-      maxlength: [10, "Name cannot be more than 10 characters"],
+      maxlength: [30, "Name cannot be more than 10 characters"],
     },
     lastName: {
       type: String,
       required: [true, "Last name is required"],
       trim: true,
-      maxlength: [10, "Name cannot be more than 10 characters"],
+      maxlength: [30, "Name cannot be more than 10 characters"],
     },
     username: {
       type: String,
       required: [true, "Please input a user name"],
       trim: true,
-      maxlength: [10, "Username cannot be more than 10 characters"],
+      maxlength: [30, "Username cannot be more than 10 characters"],
     },
     password: {
       type: String,
