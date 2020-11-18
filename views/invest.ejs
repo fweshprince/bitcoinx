@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bitcoinx trader | Login</title>
+    <title>Bitcoinx trader | Invest</title>
 
     <link rel="icon" href="img/fav-icon.png" type="image/png">
 
@@ -38,7 +38,12 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
+      <style>
+        .reasons-icon-div img{
+          width: 15%;
+          background-color: #ffff;
+        }
+      </style>
 </head>
 
 <body style="background-color: rgba(233, 233, 233, 0.9);">
@@ -224,7 +229,124 @@
         </div>
       </div>
     <!--===================== Price Plan Wrapper ========================-->
-    <div class="price-plan-block">
+    <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <h2>Our investment plans</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div style="background-color: black; height: 55vh; border: 20px rgba(128, 216, 89, 0.8) solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
+            <h4>Basic</h4>
+            <h2 class="price-plan-text-1">120%</h2>
+            <p class="price-plan-text-2">
+              Min/Max amount: <br />$50 - No Limit
+            </p>
+            <p class="price-plan-text-2">
+              Net income: 20%
+            </p>
+            <form action="/invest" method="POST">
+              <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="100" max="999"
+                required />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= `${user._id}` %>" name="user" />
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= `${user.balance}` %>" name="userBalance" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="Silver" name="tier" />
+
+              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+            </form></div>
+          <div style="background-color: black; height: 55vh; border: 20px #dee2e6 solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
+            <h4>Silver</h4>
+            <h2 class="price-plan-text-1">140%</h2>
+            <p class="price-plan-text-2">
+              Min/Max amount: <br />$510 - No Limit
+            </p>
+            <p class="price-plan-text-2">
+              Net income: 40%
+            </p>
+            <form action="/invest" method="POST">
+              <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="1000" max="4999"
+                required />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= `${user._id}` %>" name="user" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="Gold" name="tier" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= `${user.balance}` %>" name="userBalance" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="Four months" name="duration" />
+
+              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+            </form>
+          </div>
+          <div style="background-color: black; height: 55vh; border: 20px #ffd100 solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
+            <h4>Gold</h4>
+            <h2 class="price-plan-text-1">200%</h2>
+            <p class="price-plan-text-2">
+              Min/Max amount: <br />$5000 - $1,000,000
+            </p>
+            <p class="price-plan-text-2">
+              Net income: 100%
+            </p>
+            <form action="/invest" method="POST">
+              <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="5000" max="1000000"
+                required />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= `${user._id}` %>" name="user" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="Diamond" name="tier" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= user.balance %>" name="userBalance" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="Six months" name="duration" />
+
+              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+            </form>
+          </div>
+          <div style="background-color: black; height: 55vh; border: 20px #820263 solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
+            <h4>VIP</h4>
+            <h2 class="price-plan-text-1">150%</h2>
+            <p class="price-plan-text-2">
+              Min/Max amount: <br />$5000 - $1,000,000
+            </p>
+            <form action="/invest" method="POST">
+              <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="5000" max="1000000"
+                required />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= `${user._id}` %>" name="user" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="Diamond" name="tier" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="<%= user.balance %>" name="userBalance" />
+
+              <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
+                value="Six months" name="duration" />
+
+              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+            </form>
+          </div>
+      </div>
+  </div>
+    <!-- <div class="price-plan-block">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -324,7 +446,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var Tawk_API = Tawk_API || {},
