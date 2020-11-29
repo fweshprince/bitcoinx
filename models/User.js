@@ -58,9 +58,6 @@ const UserSchema = new Schema(
     rollover: {
       type: Boolean,
     },
-    bitcoinAddress: {
-      type: String,
-    },
     phoneNumber: {
       type: String,
     },

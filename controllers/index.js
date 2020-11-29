@@ -147,7 +147,6 @@ exports.postsignup = asyncHandler(async (req, res, next) => {
     email,
     password,
     username,
-    bitcoinAddress,
     phoneNumber,
     referrer,
   } = req.body;
@@ -157,7 +156,6 @@ exports.postsignup = asyncHandler(async (req, res, next) => {
     email,
     password,
     username,
-    bitcoinAddress,
     phoneNumber,
     referrer,
   });

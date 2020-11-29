@@ -198,7 +198,7 @@
         border: 10px solid #333333;
         margin-top: 10px;
         margin-bottom: 1vh;
-        min-height: 10vh;"><h4>Deposited: <%= `$${user.deposits}` %></h4></div>
+        min-height: 8vh;"><h4 style="text-align: center; font-size: 2.1em;">Deposited: <%= `$${user.deposits}` %></h4></div>
    
         <div class="col-xl-2 col-lg-3 col-md-3" style="
         background-color: #cccccc;
@@ -207,7 +207,7 @@
         border: 10px solid #333333;
         margin-top: 10px;
         margin-bottom: 1vh;
-        min-height: 10vh;"><h4>Profit: <%= `$${user.profit}` %></h4></div>
+        min-height: 8vh;"><h4 style="text-align: center; font-size: 2.1em;">Profit: <%= `$${user.profit}` %></h4></div>
 
         <div class="col-xl-2 col-lg-3 col-md-3" style="
         background-color: #cccccc;
@@ -216,7 +216,7 @@
         border: 10px solid #333333;
         margin-top: 10px;
         margin-bottom: 1vh;
-        min-height: 10vh;"><h4>Ref Bonus: <%= `$${user.refBonus}` %></h4></div>
+        min-height: 8vh;"><h4 style="text-align: center; font-size: 2.1em;">Ref Bonus: <%= `$${user.refBonus}` %></h4></div>
 
         <div class="col-xl-2 col-lg-3 col-md-3" style="
         background-color: #cccccc;
@@ -225,24 +225,25 @@
         border: 10px solid #333333;
         margin-top: 10px;
         margin-bottom: 5vh;
-        min-height: 10vh;"><h4>Balance: <%= `$${user.balance}` %></h4></div>
+        min-height: 8vh;"><h4 style="text-align: center; font-size: 2.1em;">Balance: <%= `$${user.balance}` %></h4></div>
         </div>
       </div>
     <!--===================== Price Plan Wrapper ========================-->
     <div class="container">
       <div class="row">
           <div class="col-xl-12">
-              <h2>Our investment plans</h2>
+              <h2 style="text-align: center;">Our investment plans</h2>
           </div>
       </div>
-      <div class="row">
+      <div class="row" style="color: cornsilk; font-family: verdana">
           <div style="background-color: black; height: 55vh; border: 20px rgba(128, 216, 89, 0.8) solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
-            <h4>Basic</h4>
-            <h2 class="price-plan-text-1">120%</h2>
-            <p class="price-plan-text-2">
-              Min/Max amount: <br />$50 - No Limit
+            <h4 style="text-align: center; color: rgba(128, 216, 89, 0.8); margin-top: 10px; font-family: verdana ">Basic</h4>
+            <h2 class="price-plan-text-1" style="text-align: center; font-size: 3em; color: rgba(228, 145, 44, 0.6)">120%</h2>
+            <p class="price-plan-text-2" style="text-align: center;">
+              Min: $50 <br>
+              Max: $500
             </p>
-            <p class="price-plan-text-2">
+            <p class="price-plan-text-2" style="text-align: center;">
               Net income: 20%
             </p>
             <form action="/invest" method="POST">
@@ -258,15 +259,16 @@
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
                 value="Silver" name="tier" />
 
-              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+              <input style="display: block; margin: auto; border: none; border-radius: 3px; padding: 5px 15px; background-color: rgba(128, 216, 89, 0.8);" class="see-brd-btn" type="submit" value="Invest" />
             </form></div>
           <div style="background-color: black; height: 55vh; border: 20px #dee2e6 solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
-            <h4>Silver</h4>
-            <h2 class="price-plan-text-1">140%</h2>
-            <p class="price-plan-text-2">
-              Min/Max amount: <br />$510 - No Limit
+            <h4 style="text-align: center; color: #dee2e6; margin-top: 10px; font-family: verdana ">Silver</h4>
+            <h2 class="price-plan-text-1" style="text-align: center; font-size: 3em; color: rgba(228, 145, 44, 0.6)">140%</h2>
+            <p class="price-plan-text-2" style="text-align: center;">
+              Min: $510 <br>
+              Max: No limit
             </p>
-            <p class="price-plan-text-2">
+            <p class="price-plan-text-2" style="text-align: center;">
               Net income: 40%
             </p>
             <form action="/invest" method="POST">
@@ -286,16 +288,17 @@
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
                 value="Four months" name="duration" />
 
-              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+                <input style="display: block; margin: auto; border: none; border-radius: 3px; padding: 5px 15px; background-color: rgba(128, 216, 89, 0.8);" class="see-brd-btn" type="submit" value="Invest" />
             </form>
           </div>
-          <div style="background-color: black; height: 55vh; border: 20px #ffd100 solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
-            <h4>Gold</h4>
-            <h2 class="price-plan-text-1">200%</h2>
-            <p class="price-plan-text-2">
-              Min/Max amount: <br />$5000 - $1,000,000
+          <div style="background-color: black; height: 55vh; border: 20px rgba(255, 209, 0, 0.7) solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
+            <h4 style="text-align: center; color: #ffd100; margin-top: 10px; font-family: verdana ">Gold</h4>
+            <h2 class="price-plan-text-1" style="text-align: center; font-size: 3em; color: rgba(228, 145, 44, 0.6)">200%</h2>
+            <p class="price-plan-text-2" style="text-align: center;">
+              Min: $1000 <br>
+              Max: No limit
             </p>
-            <p class="price-plan-text-2">
+            <p class="price-plan-text-2" style="text-align: center;">
               Net income: 100%
             </p>
             <form action="/invest" method="POST">
@@ -315,14 +318,18 @@
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
                 value="Six months" name="duration" />
 
-              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+                <input style="display: block; margin: auto; border: none; border-radius: 3px; padding: 5px 15px; background-color: rgba(128, 216, 89, 0.8);" class="see-brd-btn" type="submit" value="Invest" />
             </form>
           </div>
           <div style="background-color: black; height: 55vh; border: 20px #820263 solid; margin: 25px" class="col-xl-2 col-lg-2.9 col-md-2">
-            <h4>VIP</h4>
-            <h2 class="price-plan-text-1">150%</h2>
-            <p class="price-plan-text-2">
-              Min/Max amount: <br />$5000 - $1,000,000
+            <h4 style="text-align: center; color: #820263; margin-top: 10px; font-family: verdana ">VIP</h4>
+            <h2 class="price-plan-text-1" style="text-align: center; font-size: 3em; color: rgba(228, 145, 44, 0.6)">300%</h2>
+            <p class="price-plan-text-2" style="text-align: center;">
+              Min: $4000 <br>
+              Max: No limit
+            </p>
+            <p class="price-plan-text-2" style="text-align: center;">
+              Net income: 200%
             </p>
             <form action="/invest" method="POST">
               <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
@@ -341,7 +348,7 @@
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
                 value="Six months" name="duration" />
 
-              <input style="margin: 10px; border: none" class="see-brd-btn" type="submit" value="Invest" />
+                <input style="display: block; margin: auto; border: none; border-radius: 3px; padding: 5px 15px; background-color: rgba(128, 216, 89, 0.8);" class="see-brd-btn" type="submit" value="Invest" />
             </form>
           </div>
       </div>
