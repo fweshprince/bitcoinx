@@ -207,7 +207,7 @@
         margin-top: 10px;
         margin-bottom: 1vh;
         min-height: 8px;">
-        <h4 style="text-align: center; font-size: 2.7em;">Deposited: <%= `$${user.deposits}` %></h4>
+        <h4 style="text-align: center; font-size: 2.5em;">Deposited: <%= `$${user.deposits}` %></h4>
       </div>
 
       <div class="col-xl-2 col-lg-3 col-md-3" style="
@@ -218,7 +218,7 @@
         margin-top: 10px;
         margin-bottom: 1vh;
         min-height: 8px;">
-        <h4 style="text-align: center; font-size: 2.7em;">Profit: <%= `$${user.profit}` %></h4>
+        <h4 style="text-align: center; font-size: 2.5em;">Profit: <%= `$${user.profit}` %></h4>
       </div>
 
       <div class="col-xl-2 col-lg-3 col-md-3" style="
@@ -229,7 +229,7 @@
         margin-top: 10px;
         margin-bottom: 1vh;
         min-height: 8px;">
-        <h4 style="text-align: center; font-size: 2.7em;">Ref Bonus: <%= `$${user.refBonus}` %></h4>
+        <h4 style="text-align: center; font-size: 2.5em;">Ref Bonus: <%= `$${user.refBonus}` %></h4>
       </div>
 
       <div class="col-xl-2 col-lg-3 col-md-3" style="
@@ -240,62 +240,66 @@
         margin-top: 10px;
         margin-bottom: 5vh;
         min-height: 8px;">
-        <h4 style="text-align: center; font-size: 2.7em;">Balance: <%= `$${user.balance}` %></h4>
+        <h4 style="text-align: center; font-size: 2.5em;">Balance: <%= `$${user.balance}` %></h4>
       </div>
     </div>
   </div>
   <input type="number" class="form-control" style="max-width: 200px; margin-top: 20px; margin-left: 9vw;"
     placeholder="Input deposit amount" id="amountInput">
-  <div class="row reasons-block" style="padding: 0; text-align: center; margin: 25px;">
-    <h4 style="font-weight: 700; font-family: Calibri, 'Trebuchet MS', sans-serif; font-size: 1.6em;">Available payment methods:</h4>
-    <p>(click preferred payment method to show details)</p>
-  </div>
-  <ul>
-    <div class="container row" style="margin: auto;">
-      <li data-tab-target="#bitcoincash">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/btccash.png" alt="" srcset="">
-        </div>
-      </li>
-      <li data-tab-target="#dash">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/dash.png" alt="" srcset="">
-        </div>
-      </li>
-      <li data-tab-target="#doge">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/doge1.png" alt="" srcset="">
-        </div>
-      </li>
-      <li data-tab-target="#ethereum">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/ethereum.png" alt="" srcset="">
-        </div>
-      </li>
+    <hr style="border: 10px solid #333333; margin-bottom: 0;">
+  <section>
+    <div class="row reasons-block" style="padding: 0; text-align: center; margin: 25px; background-color: rgba(51, 51, 51, 0.4); margin: 0;">
+      <h4 style="font-weight: 700; font-family: Calibri, 'Trebuchet MS', sans-serif; font-size: 1.6em;">Available payment methods:</h4>
+      <p>(click preferred payment method to show details)</p>
     </div>
-    <div class="container row" style="margin: auto;">
-      <li data-tab-target="#litecoin">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/litecoin.png" alt="" srcset="">
-        </div>
-      </li>
-      <li data-tab-target="#payeer">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/payeer.png" alt="" srcset="">
-        </div>
-      </li>
-      <li data-tab-target="#bitcoin">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/bitcoin.png" alt="" srcset="">
-        </div>
-      </li>
-      <li data-tab-target="#perfectmoney">
-        <div class="col-md-3 col-xs-3" style="margin-top: 15px">
-          <img style="width: 100%;" src="img/perfectmoney.png" alt="" srcset="">
-        </div>
-      </li>
-    </div>
-  </ul>
+    <ul style="background-color: rgba(51, 51, 51, 0.4); margin: 0;">
+      <div class="container row" style="margin: auto;">
+        <li data-tab-target="#bitcoincash">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/btccash.png" alt="" srcset="">
+          </div>
+        </li>
+        <li data-tab-target="#dash">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/dash.png" alt="" srcset="">
+          </div>
+        </li>
+        <li data-tab-target="#doge">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/doge1.png" alt="" srcset="">
+          </div>
+        </li>
+        <li data-tab-target="#ethereum">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/ethereum.png" alt="" srcset="">
+          </div>
+        </li>
+      </div>
+      <div class="container row" style="margin: auto;">
+        <li data-tab-target="#litecoin">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/litecoin.png" alt="" srcset="">
+          </div>
+        </li>
+        <li data-tab-target="#payeer">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/payeer.png" alt="" srcset="">
+          </div>
+        </li>
+        <li data-tab-target="#bitcoin">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/bitcoin.png" alt="" srcset="">
+          </div>
+        </li>
+        <li data-tab-target="#perfectmoney">
+          <div class="col-md-3 col-xs-3" style="margin-top: 15px">
+            <img style="width: 100%;" src="img/perfectmoney.png" alt="" srcset="">
+          </div>
+        </li>
+      </div>
+    </ul>
+  </section>
+  <hr style="border: 10px solid #333333;  margin-top: 0; ">
 
   <div class="container-fluid animatedParent active" id="bitcoincash" data-tab-content style="
           border: 10px solid #333333;
