@@ -248,7 +248,7 @@
             </p>
             <form action="/invest" method="POST">
               <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
-                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="100" max="999"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="50" max="500"
                 required />
 
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
@@ -273,7 +273,7 @@
             </p>
             <form action="/invest" method="POST">
               <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
-                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="1000" max="4999"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="510"
                 required />
 
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
@@ -303,7 +303,7 @@
             </p>
             <form action="/invest" method="POST">
               <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
-                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="5000" max="1000000"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="1000"
                 required />
 
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
@@ -333,7 +333,7 @@
             </p>
             <form action="/invest" method="POST">
               <input type="number" class="form-control" style="max-width: 200px; margin: 10px auto"
-                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="5000" max="1000000"
+                placeholder="Input amount to invest" id="amountInput" name="amountInvested" min="4000"
                 required />
 
               <input type="text" class="form-control" style="display: none; margin: 10px" id="amountInput"
@@ -496,6 +496,19 @@
 <script src="js/google-map.js"></script>
 
 <script src="js/theme.js"></script>
+<script>
+  let allForms = document.forms;
+  for (let i = 0; i < allForms.length; i++) {
+    allForms[i].addEventListener("submit", (e) => {
+      let value = parseInt(allForms[i].amountInvested.value);
+      let userBalance = parseInt(allForms[i].userBalance.value);
+      if (value > userBalance) {
+        alert("Sorry, user balance is not sufficient");
+        e.preventDefault();
+      }
+    });
+  }
+</script>
 </body>
 
 </html>
