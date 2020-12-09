@@ -1,29 +1,26 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const InvestmentSchema = new Schema(
-  {
+const InvestmentSchema = new Schema({
     user: {
-      type: mongoose.Schema.ObjectId,
-      ref: "User",
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
     },
     tier: {
-      type: String,
-      enum: ["Gold", "Silver", "Diamond"],
+        type: String,
+        enum: ["Gold", "Silver", "Diamond"],
     },
     duration: {
-      type: String,
-      default: "Three weeks",
+        type: String,
+        default: "Two days",
     },
     amountInvested: {
-      type: Number,
+        type: Number,
     },
     status: {
-      type: String,
-      default: "Active",
+        type: String,
+        default: "Active",
     },
-  },
-  { timestamps: true }
-);
+}, { timestamps: true });
 
 const Investment = mongoose.model("Investment", InvestmentSchema);
 
